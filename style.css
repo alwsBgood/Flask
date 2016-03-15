@@ -1,0 +1,291 @@
+body{
+    background: #05530E;
+}
+
+
+
+.flask{
+    position: absolute;
+    bottom: 0;
+    left: 200px;
+    width: 370px;
+    height: 500px;
+}
+
+/*=========Основание колбы========*/
+
+.flask-bottom{
+    position: absolute;
+    bottom: 0;
+}
+
+.flask-body{
+    position: relative;
+    width: 370px;
+    height: 300px;
+    background: #288F4F;
+    overflow: hidden;
+}
+
+.flask-body:before,
+.flask-body:after{
+    content: "";
+        position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 260px solid #05530E;
+    z-index: 100;
+}
+
+.flask-body:before{
+    border-right: 143px solid transparent;
+    left: 0
+}
+
+
+.flask-body:after{
+    border-left: 143px solid transparent;
+    right: 0
+}
+
+
+.flask-body-1{
+    position: absolute;
+    bottom: 63px;
+    right: 25px;
+    width: 360px;
+    height: 100px;
+    font-size: 30px;
+    font-style: italic;
+    text-align: center;
+    vertical-align: middle;
+    color: #DEF708;
+    background: #146824;
+    transform: rotate(-10deg);
+    z-index: 10;
+}
+
+
+
+.flask-body-2{
+    position: absolute;
+    bottom: 0;
+    right: -5px;
+    width: 380px;
+    height: 85px;
+    background: #1ECC53;
+    transform: rotate(17deg);
+    z-index: 9;
+}
+
+
+.flask-body-3{
+    position: absolute;
+    right: 0px;
+    bottom: 0;
+    width: 400px;
+    height: 110px;
+    background: #03FBC4;
+    transform: rotate(-6deg);
+    z-index: 7;
+}
+
+
+.flask-body-4{
+    position: absolute;
+    right: 115px;
+    bottom: 95px;
+    width: 200px;
+    height: 90px;
+    background: #15DC1A;
+    transform: rotate(10deg);
+    z-index: 8;
+}
+
+
+.flask-body-5{
+    position: absolute;
+    top: -75px;
+    right: 125px;
+    width: 130px;
+    height: 100px;
+    background: #356915;
+    transform: rotate(-6deg);
+}
+
+
+/*==========Горлышко колбы==========*/
+
+.flask-throat{
+    position: absolute;
+    width: 83px;
+    height: 120px;
+    left: 144px;
+    bottom: 300px;
+    background: #05530E;
+    overflow: hidden;
+}
+
+
+.flask-throat-1{
+    position: absolute;
+    right: -13px;
+    bottom: -16px;
+    width: 100px;
+    height: 40px;
+    background: #356915;
+    transform: rotate(10deg);
+    z-index: 6; 
+}
+
+
+.flask-throat-2{
+    position: absolute;
+    right: 0;
+    bottom: 5px;
+    width: 85px;
+    height: 80px;
+    background: #288F4F;
+    z-index: 5;
+}
+
+
+.flask-throat-3{
+    position: absolute;
+    width: 120px;
+    height: 50px;
+    right: -20px;
+    bottom: 53px;
+    background: #007506;
+    transform: rotate(20deg);
+    z-index: 4;
+
+}
+
+
+/*==========Bublles=======*/
+
+.circle {
+  border-radius: 50%;
+  border: 1px solid #fff;
+  position: absolute;
+  left: 45%;
+  top: 30px;
+}
+
+.little_circle {
+  width: 5px;
+  height: 5px;
+}
+
+.little_circle_white {
+  background-color: #fff;
+  left: 48%;
+}
+
+.little_circle_purpure {
+  background-color: #6c49ac;
+  border: 1px solid #6c49ac;
+  left: 52%;
+}
+
+.little_circle_blue {
+  background-color: #117fba;
+  border: 1px solid #117fba;
+  left: 45%;
+}
+
+.small_circle {
+  width: 20px;
+  height: 20px;
+}
+
+.middle_circle {
+  width: 45px;
+  height: 45px;
+}
+
+
+
+.circle {
+  border-radius: 50%;
+  border: 1px solid #fff;
+  position: absolute;
+  left: 45%;
+  top: 30px;
+}
+
+.little_circle {
+  width: 5px;
+  height: 5px;
+}
+
+.little_circle_white {
+  background-color: #fff;
+  left: 48%;
+}
+
+.little_circle_purpure {
+  background-color: #6c49ac;
+  border: 1px solid #6c49ac;
+  left: 52%;
+}
+
+.little_circle_blue {
+  background-color: #117fba;
+  border: 1px solid #117fba;
+  left: 45%;
+}
+
+.small_circle {
+  width: 20px;
+  height: 20px;
+}
+
+.middle_circle {
+  width: 45px;
+  height: 45px;
+}
+
+
+
+
+.circle {
+  animation-name: circle;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-delay: 0s;
+}
+
+.little_circle_white {
+  animation-duration: 2000ms;
+}
+
+.little_circle_purpure {
+  animation-duration: 2000ms;
+  animation-delay: 100ms;
+}
+
+.little_circle_blue {
+  animation-duration: 2000ms;
+  animation-delay: 200ms;
+}
+
+.small_circle {
+  animation-duration: 4200ms;
+  animation-delay: 300ms;
+}
+
+@keyframes circle {
+  0% {
+    transform: translateZ(0px) translateY(20px) scale(1);
+    opacity: 1;
+  }
+  85% {
+    opacity: 0;
+  }
+  100% {
+    transform: translateZ(0px) translateY(-200px) scale(0);
+    opacity: 0;
+  }
+}
